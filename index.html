@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truNEWS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+      <nav> 
+        <div class="main-nav container flex">
+            <a class="company-logo" href="#" onclick="reload()">
+                    <img src="./logon.png" alt="Logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="blockchain" onclick="onNavItemClick('blockchain')">BlockChain</li>
+                    <li class="hover-link nav-item" id="Cloud-Computing" onclick="onNavItemClick('Cloud-Computing')">Cloud-Computing</li>
+                    <li class="hover-link nav-item" id="Kolkata" onclick="onNavItemClick('Kolkata')">Our City</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchtag" class="news-input" placeholder="e.g.(honest) Kuch Bhi">
+                <button id="selem" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+            <div class="cards-container container flex" id="cards-container">
+            </div>          
+    </main>
+    <template id="newscard">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="card-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">
+                    This is Dummy Data
+                </h3>
+                <h6 class="news-source" id="news-source">
+                    Let this is a Caption
+                </h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ex alias omnis odit repudiandae, dolore, incidunt soluta ab deserunt vitae rem eligendi necessitatibus, ipsum ipsa accusamus sed. Similique qui illum repudiandae temporibus necessitatibus tenetur sunt explicabo magni assumenda! Quos, quae maiores? Accusamus corrupti iste beatae qui, numquam aliquam architecto quisquam.    </p>
+            </div>
+        </div>
+    </template>
+    <script src="scirp.js"></script>
+</body>
+</html>
